@@ -3,7 +3,7 @@ using UnityEngine;
 public class FruitSpawner : MonoBehaviour
 {
     public GameObject fruitPrefab;
-    public float spawnRadius = 5f;
+    public float spawnRadius = 2f;
 
     private float nextSpawnTime = 0f;
 
@@ -12,7 +12,7 @@ public class FruitSpawner : MonoBehaviour
         if (Time.time >= nextSpawnTime)
         {
             SpawnFruit();
-            nextSpawnTime = Time.time + 1f;
+            nextSpawnTime = Time.time + 0.4f;
         }
     }
 
