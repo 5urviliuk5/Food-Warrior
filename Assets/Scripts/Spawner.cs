@@ -12,7 +12,7 @@ public class FruitSpawner : MonoBehaviour
         if (Time.time >= nextSpawnTime)
         {
             SpawnFruit();
-            nextSpawnTime = Time.time + 0.4f;
+            nextSpawnTime = Time.time;
         }
     }
 
