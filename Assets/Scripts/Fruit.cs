@@ -17,7 +17,6 @@ public class Fruit : MonoBehaviour
     {
         if (transform.position.y < -6)
         {
-            print("<3");
             Destroy(gameObject);
         }
     }
