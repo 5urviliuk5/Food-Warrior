@@ -6,5 +6,5 @@ using OneLine;
 
 public class Wave
 {
-    [OneLine]public List<FruitSpawnData> items;
+    [OneLineWithHeader]public List<FruitSpawnData> items;
 }
