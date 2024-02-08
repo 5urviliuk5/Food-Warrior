@@ -174,29 +174,38 @@ MonoBehaviour:
     - delay: 0
       isBomb: 0
       x: 0
-      velocity: {x: 0, y: 0}
+      velocity: {x: 0, y: 10}
   - items:
     - delay: 0
       isBomb: 1
       x: 1
-      velocity: {x: 0, y: 0}
+      velocity: {x: 5, y: 12}
     - delay: 0
       isBomb: 1
       x: 4.69
-      velocity: {x: 0, y: 0}
+      velocity: {x: -5, y: 12}
   - items:
+    - delay: 1
+      isBomb: 0
+      x: 0
+      velocity: {x: 0, y: 10}
+    - delay: 1
+      isBomb: 0
+      x: 1.52
+      velocity: {x: 0, y: 11}
+    - delay: 1
+      isBomb: 0
+      x: 3.58
+      velocity: {x: 0, y: 12}
+  - items:
+    - delay: 0
+      isBomb: 1
+      x: 0
+      velocity: {x: 0, y: 8}
     - delay: 0
       isBomb: 0
       x: 0
-      velocity: {x: 0, y: 0}
-    - delay: 0
-      isBomb: 0
-      x: 1.52
-      velocity: {x: 0, y: 0}
-    - delay: 0
-      isBomb: 0
-      x: 3.58
-      velocity: {x: 0, y: 0}
+      velocity: {x: 0, y: 10}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
