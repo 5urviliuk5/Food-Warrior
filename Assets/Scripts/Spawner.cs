@@ -18,7 +18,7 @@ public class Spawner : MonoBehaviour
                 var go = Instantiate(prefab);
                 go.transform.position = new Vector3 (fruit.x, -5f, 0);
                 var rb2d = go.GetComponent<Rigidbody2D>();
-                rb2d.velocity = fruit.velocity;
+                rb2d.velocity = new Vector2(fruit.velocity.x, fruit.velocity.y);
                 await new WaitForSeconds(fruit.delay);
             }
             await new WaitForSeconds(3f);
