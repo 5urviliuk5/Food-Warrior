@@ -85,6 +85,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explodeParticles: {fileID: 5074925631387230144, guid: 082a08efe3f227d48a7bc7011cdf8c31, type: 3}
   juiceColor: {r: 0.16747947, g: 0.9150943, b: 0.5292286, a: 1}
+  spawnSound: {fileID: 8300000, guid: 66d60676357b075419ae6f1a7457807e, type: 3}
+  sliceSound: {fileID: 8300000, guid: faf32607316e4cc4d8c944f12416772f, type: 3}
 --- !u!50 &3297623144583062576
 Rigidbody2D:
   serializedVersion: 4

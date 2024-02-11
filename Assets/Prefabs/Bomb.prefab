@@ -77,6 +77,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explodeParticles: {fileID: 289527632160028433, guid: 4356d2c23d6477b45a1cb44f3890cd2e, type: 3}
+  juiceColor: {r: 0, g: 0, b: 0, a: 0}
+  spawnSound: {fileID: 8300000, guid: ba02ebba2ecda674e9f658d979a670f3, type: 3}
+  sliceSound: {fileID: 8300000, guid: 461ba777b26000b4eb5c914f49ce9ad9, type: 3}
 --- !u!58 &4714102380564157768
 CircleCollider2D:
   m_ObjectHideFlags: 0
