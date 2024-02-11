@@ -10,6 +10,7 @@ public class Fruit : MonoBehaviour
     public Color juiceColor;
     public AudioClip spawnSound;
     public AudioClip sliceSound;
+    public AudioClip missSound;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class Fruit : MonoBehaviour
 
     void Miss()
     {
+        AudioSystem.Play(missSound);
         Destroy(gameObject);
     }
 
