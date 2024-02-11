@@ -1,9 +1,13 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static UnityEngine.ParticleSystem;
 
 public class Fruit : MonoBehaviour
 {
     public GameObject explodeParticles;
     Rigidbody2D rb;
+    public Color juiceColor;
 
     void Start()
     {
@@ -28,7 +32,26 @@ public class Fruit : MonoBehaviour
     {
         var particles = Instantiate(explodeParticles);
         particles.transform.position = transform.position;
+        
+        if (!CompareTag("Bomb"))
+        {
+            Split(particles);
+        }
 
         Destroy(gameObject);
+    }
+
+    void Split(GameObject particles)
+    {
+        var children = GetComponentsInChildren<MeshRenderer>();
+        foreach (var child in children)
+        {
+            var childRb = child.gameObject.AddComponent<Rigidbody2D>();
+            childRb.velocity = rb.velocity + Random.insideUnitCircle;
+        }
+        transform.DetachChildren();
+
+        particles.GetComponent<ParticleSystem>().startColor = juiceColor;
+        particles.transform.GetChild(0).GetComponent<ParticleSystem>().startColor = juiceColor;
     }
 }
